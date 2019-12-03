@@ -4,6 +4,7 @@ from pdfminer.pdfinterp import PDFPageInterpreter
 from pdfminer.converter import PDFPageAggregator
 from pdfminer.pdfpage import PDFPage
 
+from pathlib import Path, PureWindowsPath
 from fill_position import find_speaker_position
 from fill_speech import find_speaker_speech
 import pandas as pd
@@ -33,10 +34,13 @@ def read_pdf(pdf_name):
 
 
 
-def parse_pdf(pdf_name, names, proceeding, speakers_df):
+def parse_pdf(pdf_name, names, proceeding, speakers_df, year):
     text, upper_case_text = read_pdf(pdf_name)
     names = [name.lower() for name in names]
-
+    try:
+        os.mkdir(Path("Data/speeches/" + year))
+    except:
+        pass
 
     for name in names:
         name_order = {"speech": []}
@@ -51,103 +55,21 @@ def parse_pdf(pdf_name, names, proceeding, speakers_df):
         country = speakers_df.loc[(speakers_df['surname'].str.lower() == original_name) & (speakers_df['proceeding'] == proceeding + '_E'), 'country'].values[0]
         speakers_df.loc[(speakers_df['surname'].str.lower() == original_name) & (speakers_df['proceeding'] == proceeding + '_E'), 'position'] = find_speaker_position(name, text, speakers_df, proceeding, original_name, upper_case_text)
 
-
         print("Name: {}".format(name))
-        find_speaker_speech(name, text, name_order, country, proceeding)
-        # try:
-        #     if name not in text:
-        #         try:
-        #             speech = re.split(r'{}(.{{1,10}})(\s\((.+?)\))?(\s\((.+?)\))?:(.+?)(the president(\s\((.+?)\))?:|the acting president(\s\((.+?)\))?:)'.format(name[:3]), text)[6]
-        #             name_order['speech'].append(speech)
-        #             speech = pd.DataFrame(name_order)
-        #             speech.to_json(os.getcwd() + '\\speeches\\' + '{}_{}_{}.json'.format(country, name, proceeding))
-        #             next
-        #         except:
-        #             name_order['speech'].append(None)
-        #             speech = pd.DataFrame(name_order)
-        #             speech.to_json(os.getcwd() + '\\speeches\\' + 'bug_{}_{}_{}.json'.format(country, name, proceeding))
-        #     else:
-        #         speech = re.split(r'{}(\s\((.+?)\))?(\s\((.+?)\))?:(.+?)(the president(\s\((.+?)\))?:|the acting president(\s\((.+?)\))?:)'.format(name), text)[5]
-        #         name_order['speech'].append(speech)
-        #         speech = pd.DataFrame(name_order)
-        #         speech.to_json(os.getcwd() + '\\speeches\\' + '{}_{}_{}.json'.format(country, name, proceeding))
-        #         next
-        # except:
-        #     try:
-        #         if name not in text:
-        #             try:
-        #                 speech = re.split(r'{}(.{{1,10}})(\s\((.+?)\))?(\s\((.+?)\))?:(.+?)'.format(name[:3]), text)[6]
-        #                 name_order['speech'].append(speech)
-        #                 speech = pd.DataFrame(name_order)
-        #                 speech.to_json(os.getcwd() + '\\speeches\\' + '{}_{}_{}.json'.format(country, name, proceeding))
-        #                 next
-        #             except:
-        #                 pass
-        #         else:
-        #             speech = re.split(r'{}(\s\((.+?)\))?(\s\((.+?)\))?:(.+?)'.format(name), text)[6]
-        #             name_order['speech'].append(speech)
-        #             speech = pd.DataFrame(name_order)
-        #             speech.to_json(os.getcwd() + '\\speeches\\' + '{}_{}_{}.json'.format(country, name, proceeding))
-        #             next
-        #     except:
-        #         try:
-        #             if name not in text:
-        #                 try:
-        #                     speech = re.split(r'{}(.{{1,10}})(\s\((.+?)\))?(\s\((.+?)\))?:(.+?)+'.format(name[:3]), text)[6]
-        #                     name_order['speech'].append(speech)
-        #                     speech = pd.DataFrame(name_order)
-        #                     speech.to_json(os.getcwd() + '\\speeches\\' + '{}_{}_{}.json'.format(country, name, proceeding))
-        #                     next
-        #                 except:
-        #                     pass
-        #             else:
-        #                 speech = re.split(r'{}(\s\((.+?)\))?(\s\((.+?)\))?:(.+?)+'.format(name), text)[6]
-        #                 name_order['speech'].append(speech)
-        #                 speech = pd.DataFrame(name_order)
-        #                 speech.to_json(os.getcwd() + '\\speeches\\' + '{}_{}_{}.json'.format(country, name, proceeding))
-        #                 next
-        #         except:
-        #
-        #             try:
-        #                 if name not in text:
-        #                     try:
-        #                         speech = re.split(r'{}(.{{1,10}})(\s\((.+?)\))?(\s\((.+?)\))?:(.+?)(the president(\s\((.+?)\))?:|the acting president(\s\((.+?)\))?:)'.format(name[:3]), text)[6]
-        #                         name_order['speech'].append(speech)
-        #                         speech = pd.DataFrame(name_order)
-        #                         speech.to_json(os.getcwd() + '\\speeches\\' + '{}_{}_{}.json'.format(country, name, proceeding))
-        #                         next
-        #                     except:
-        #                         pass
-        #                 else:
-        #                     speech = re.split(r'{}(\s\((.+?)\))?(\s\((.+?)\))?:(.+?)(the president(\s\((.+?)\))?:|the acting president(\s\((.+?)\))?:)'.format(name), text)[5]
-        #                     name_order['speech'].append(speech)
-        #                     speech = pd.DataFrame(name_order)
-        #                     speech.to_json(os.getcwd() + '\\speeches\\' + '{}_{}_{}.json'.format(country, name, proceeding))
-        #                     next
-        #             except:
-        #                 try:
-        #                     if name not in text:
-        #                         try:
-        #                             # if there are more names after the known name
-        #                             speech = re.split(
-        #                                 r'{}(.{{1,10}})((\s(.+?)){1,3})?(\s\((.+?)\))?(\s\((.+?)\))?:(.+?)(the president(\s\((.+?)\))?: | the acting president(\s\((.+?)\))?:)'.format(name), text)[6]
-        #                             name_order['speech'].append(speech)
-        #                             speech = pd.DataFrame(name_order)
-        #                             speech.to_json(os.getcwd() + '\\speeches\\' + '{}_{}_{}.json'.format(country, name, proceeding))
-        #                         except:
-        #                             pass
-        #                     else:
-        #                         # if there are more names after the known name
-        #                         speech = re.split(r'{}((\s(.+?)){1,3})?(\s\((.+?)\))?(\s\((.+?)\))?:(.+?)(the president(\s\((.+?)\))?: | the acting president(\s\((.+?)\))?:)'.format(name), text)[5]
-        #                         name_order['speech'].append(speech)
-        #                         speech = pd.DataFrame(name_order)
-        #                         speech.to_json(os.getcwd() + '\\speeches\\' + '{}_{}_{}.json'.format(country, name, proceeding))
-        #                 except:
-        #                     print("Failed - Name:{}".format(name))
-        #                     name_order['speech'].append(None)
-        #                     speech = pd.DataFrame(name_order)
-        #                     speech.to_json(os.getcwd() + '\\speeches\\' + 'bug_{}_{}_{}.json'.format(country, name, proceeding))
+        find_speaker_speech(name, text, name_order, country, proceeding, year)
 
-
-# speakers_df.loc[speakers_df['proceeding'] == proceeding + '_E', ['position', 'surname']]
     return pd.DataFrame(name_order), speakers_df.loc[speakers_df['proceeding'] == proceeding + '_E']
+
+
+def load_data():
+    try:
+        print("Loading Data...")
+        speakers_df = pd.read_csv(Path('Data/speakers.csv'))
+        speakers_df['position'] = None
+        print("Finished Loading Data...")
+    except:
+        print("Folder not found\nCreating one...")
+        os.mkdir(Path("Data"))
+        os.mkdir(Path("Data/speeches"))
+
+    return speakers_df

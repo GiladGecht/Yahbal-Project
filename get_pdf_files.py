@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from pathlib import Path
 from tqdm import tqdm
 import time
 
@@ -9,14 +10,14 @@ base_url = "https://undocs.org/en/A/{}/PV.{}"
 WINDOW_SIZE = "1920,1080"
 chrome_options = Options()
 chrome_options.add_experimental_option('prefs',  {
-    "download.default_directory": r'C:\Users\Gilad Gecht\yahbal\Data',
+    "download.default_directory": str(Path("Data/proceedings")),
     "download.prompt_for_download": False,
     "download.directory_upgrade": True,
     "plugins.always_open_pdf_externally": True})
 
 driver = webdriver.Chrome(options=chrome_options)
-
 T1 = time.time()
+
 for i in tqdm(range(71, 74)):
     for j in range(4, 28):
         try:
