@@ -15,7 +15,8 @@ def find_speaker_speech(name, text, name_order, country, proceeding, year):
             except:
                 name_order['speech'].append(None)
                 speech = pd.DataFrame(name_order)
-                speech.to_json(Path("Data/speeches/' + '/bug_{}_{}_{}.json".format(country, name, proceeding)))
+                speech.to_json(Path("Data/speeches/" + year + "/bug_{}_{}_{}.json".format(country, name, proceeding)))
+                next
         else:
             speech = re.split(r'{}(\s\((.+?)\))?(\s\((.+?)\))?:(.+?)(the president(\s\((.+?)\))?:|the acting president(\s\((.+?)\))?:)'.format(name), text)[5]
             name_order['speech'].append(speech)

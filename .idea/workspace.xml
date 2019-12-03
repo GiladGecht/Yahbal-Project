@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3002bd1-b39d-477e-9f35-97438329fcf4" name="Default Changelist" comment="" />
+    <list default="true" id="b3002bd1-b39d-477e-9f35-97438329fcf4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Burkina Faso_kaboré_A_72_PV.11.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Colombia_calderón_A_72_PV.4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Côte d'Ivoire_ouattara_A_72_PV.8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Ecuador_garcés_A_72_PV.9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/El Salvador_cerén_A_72_PV.13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Finland_niinistö_A_72_PV.7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Hungary_szijjártó_A_72_PV.16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Montenegro_vujanović_A_72_PV.9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Panama_rodríguez_A_72_PV.7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Peru_cuadra velásquez_A_72_PV.23.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fill_speech.py" beforeDir="false" afterPath="$PROJECT_DIR$/fill_speech.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,11 +23,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-189">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="699">
+              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+              <folding>
+                <element signature="e#61#99#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -22,8 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+            <state relative-caret-position="657">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
               </folding>
@@ -43,8 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fill_speech.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="22" column="55" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="55" />
+            <state relative-caret-position="350">
+              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -52,14 +68,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/get_pdf_files.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+            <state relative-caret-position="364">
+              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="184" column="12" selection-start-line="184" selection-start-column="12" selection-end-line="184" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -130,11 +155,11 @@
         <option value="$PROJECT_DIR$/extract_speeches.py" />
         <option value="$PROJECT_DIR$/utils.py" />
         <option value="$PROJECT_DIR$/fill_position.py" />
-        <option value="$PROJECT_DIR$/fill_speech.py" />
         <option value="$PROJECT_DIR$/test2.py" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/get_pdf_files.py" />
+        <option value="$PROJECT_DIR$/fill_speech.py" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
@@ -189,7 +214,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.get_pdf_files">
+  <component name="RunManager" selected="Python.main">
     <configuration name="extract_speeches" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="yahbal" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -297,8 +322,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.get_pdf_files" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.get_pdf_files" />
         <item itemvalue="Python.extract_speeches" />
         <item itemvalue="Python.utils" />
         <item itemvalue="Python.test" />
@@ -322,13 +347,13 @@
     <frame x="-7" y="0" width="1499" height="1407" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15811089" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15811089" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32967034" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32810047" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.24646781" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32810047" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.24646781" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -548,37 +573,10 @@
     <entry file="file://$PROJECT_DIR$/../Anaconda3/envs/Python36/Lib/site-packages/pdfminer/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="104" column="12" lean-forward="true" selection-start-line="104" selection-start-column="12" selection-end-line="104" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fill_speech.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="22" column="55" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="62">
           <caret line="2" selection-start-line="2" selection-end-line="10" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -599,19 +597,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/get_pdf_files.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-189">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="364">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/get_pdf_files.py">
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        <state relative-caret-position="368">
+          <caret line="184" column="12" selection-start-line="184" selection-start-column="12" selection-end-line="184" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="657">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
           <folding>
-            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fill_speech.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="699">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+          <folding>
+            <element signature="e#61#99#0" expanded="true" />
           </folding>
         </state>
       </provider>

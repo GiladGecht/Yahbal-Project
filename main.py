@@ -32,7 +32,7 @@ if __name__ == "__main__":
         try:
             proceeding = str(file).split("E")[0].split("\\")[-1][:-1]
             proceeding_number = proceeding.split("_")[1]
-            if proceeding_number == str(int(2016) - 1945):
+            if proceeding_number == str(int(YEAR) - 1945):
                 if (int(proceeding.split(".")[-1]) >= LOWER_BOUND) and (int(proceeding.split(".")[-1]) <= UPPER_BOUND):
                     print("\nProcessing Session: {}".format(file))
                     names = speakers_df[speakers_df['proceeding'] == proceeding + "_E"]['surname'].value_counts().index
