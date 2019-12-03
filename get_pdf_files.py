@@ -12,11 +12,8 @@ chrome_options.add_experimental_option('prefs',  {
     "download.default_directory": r'C:\Users\Gilad Gecht\yahbal\Data',
     "download.prompt_for_download": False,
     "download.directory_upgrade": True,
-    "plugins.always_open_pdf_externally": True
-    }
-)
-# chrome_options.add_argument("--headless")
-# chrome_options.add_argument("--window-size=%s" % WINDOW_SIZE)
+    "plugins.always_open_pdf_externally": True})
+
 driver = webdriver.Chrome(options=chrome_options)
 
 T1 = time.time()
@@ -34,5 +31,4 @@ for i in tqdm(range(71, 74)):
 
 
 print("Done in {} seconds...".format(time.time() - T1))
-# driver.close()
 
