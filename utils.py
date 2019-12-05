@@ -21,7 +21,7 @@ def read_pdf(pdf_name):
     upper_case_text = re.sub(" +", " ", re.sub(r"\n+", " ", processed_text))
     text = re.sub(" +", " ", re.sub(r"\n+", " ", processed_text.lower()))
     text = text.replace(r"\r\n", "").replace("’", "")
-    #
+
     return text, re.sub(" +", " ", upper_case_text)
 
 
