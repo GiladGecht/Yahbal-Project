@@ -110,7 +110,7 @@ pdfminer.six==20181108
 pdftotree==0.4.0
 phik==0.9.8
 pickleshare==0.7.5
-Pillow==6.2.0
+Pillow==6.1.0
 pluggy==0.13.0
 praw==6.3.1
 prawcore==1.0.1
@@ -196,7 +196,7 @@ Wand==0.5.7
 wcwidth==0.1.7
 webencodings==0.5.1
 websocket-client==0.56.0
-Werkzeug==0.15.3
+Werkzeug==0.14.1
 wget==3.2
 widgetsnbextension==3.4.2
 win-inet-pton==1.1.0
