@@ -9,7 +9,10 @@ __Author__: Gilad Gecht
 from utils import parse_pdf, load_data
 from pathlib import Path
 import pandas as pd
+import warnings
 import argparse
+
+warnings.simplefilter("ignore")
 
 parser = argparse.ArgumentParser()
 parser.add_argument("year", help="The year you wish to extract speeches from")
@@ -21,12 +24,18 @@ YEAR        = args.year
 UPPER_BOUND = args.upper_bound
 LOWER_BOUND = args.lower_bound
 
+
+# For debugging use
+# YEAR = "2017"
+# UPPER_BOUND = 100
+# LOWER_BOUND = 0
+
 if __name__ == "__main__":
 
     yearly_df   = pd.DataFrame()
     speakers_df = load_data()
-    data_folder = Path('Data/proceedings')
-    pdf_files   = data_folder.glob("*.pdf")
+    data_folder = Path('Data/texts')
+    pdf_files   = data_folder.glob("*.json")
 
     for file in pdf_files:
         try:

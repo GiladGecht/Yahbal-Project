@@ -1,36 +1,29 @@
-from pdfminer.layout import LAParams, LTTextBox
-from pdfminer.pdfinterp import PDFResourceManager
-from pdfminer.pdfinterp import PDFPageInterpreter
-from pdfminer.converter import PDFPageAggregator
-from pdfminer.pdfpage import PDFPage
-
-from pathlib import Path, PureWindowsPath
+from pathlib import Path
 from fill_position import find_speaker_position
 from fill_speech import find_speaker_speech
 import pandas as pd
+import unicodedata
 import os
 import re
 
 
 def read_pdf(pdf_name):
-    fp = open(pdf_name, 'rb')
-    rsrcmgr = PDFResourceManager()
-    laparams = LAParams()
-    device = PDFPageAggregator(rsrcmgr, laparams=laparams)
-    interpreter = PDFPageInterpreter(rsrcmgr, device)
-    pages = PDFPage.get_pages(fp)
+    with open(pdf_name, "rb") as pdf:
+        text = pdf.read().decode('utf-8')
 
-    full_text = ''
-    for page in pages:
-        interpreter.process_page(page)
-        layout = device.get_result()
-        for lobj in layout:
-            if isinstance(lobj, LTTextBox):
-                text =  lobj.get_text()
-                full_text += text
+    processed_text = ""
+    for word in text.split():
+        word = ''.join(char for char in
+                       unicodedata.normalize('NFKD', word)
+                       if unicodedata.category(char) != 'Mn')
 
-    print("Done parsing file\n")
-    return re.sub(" +", " ", re.sub(r"\n+", " ", full_text.lower())), re.sub(" +", " ", re.sub(r"\n+", " ", full_text))
+        processed_text += ' ' + word
+    upper_case_text = re.sub(" +", " ", re.sub(r"\n+", " ", processed_text))
+    text = re.sub(" +", " ", re.sub(r"\n+", " ", processed_text.lower()))
+    text = text.replace(r"\r\n", "").replace("’", "")
+    #
+    return text, re.sub(" +", " ", upper_case_text)
+
 
 
 
@@ -52,6 +45,11 @@ def parse_pdf(pdf_name, names, proceeding, speakers_df, year):
             name = name.split(" ")[1]
         else:
             pass
+
+        if '\'' in name:
+            name = name.replace("\'", "")
+        name = ''.join(char for char in unicodedata.normalize('NFKD', name) if unicodedata.category(char) != 'Mn')
+
         country = speakers_df.loc[(speakers_df['surname'].str.lower() == original_name) & (speakers_df['proceeding'] == proceeding + '_E'), 'country'].values[0]
         speakers_df.loc[(speakers_df['surname'].str.lower() == original_name) & (speakers_df['proceeding'] == proceeding + '_E'), 'position'] = find_speaker_position(name, text, speakers_df, proceeding, original_name, upper_case_text)
 
@@ -67,9 +65,10 @@ def load_data():
         speakers_df = pd.read_csv(Path('Data/speakers.csv'))
         speakers_df['position'] = None
         print("Finished Loading Data...")
+
+        return speakers_df
     except:
         print("Folder not found\nCreating one...")
         os.mkdir(Path("Data"))
         os.mkdir(Path("Data/speeches"))
 
-    return speakers_df
