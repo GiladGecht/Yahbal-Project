@@ -19,8 +19,13 @@ def read_pdf(pdf_name):
 
         processed_text += ' ' + word
     upper_case_text = re.sub(" +", " ", re.sub(r"\n+", " ", processed_text))
-    text = re.sub(" +", " ", re.sub(r"\n+", " ", processed_text.lower()))
+    text = re.sub(" +", " ", re.sub(r"\n+", " ", processed_text))
     text = text.replace(r"\r\n", "").replace("’", "")
+    text = re.sub(r"\w\/\d{2}\/PV\.\d{2}", "", text)
+    text = re.sub(r"([0-9]{0,2}|[\w])\/[0-9]{0,4}(\/[0-9]{0,4}|PV\.[0-9]})?", "", text)
+    text = re.sub(r"\(E\)\*\d{7}\*", "", text)
+    text = re.sub(r"\d{1,2}-\d{5}", "", text)
+    text = re.sub(r"PV.\d{1,2}", "", text)
 
     return text, re.sub(" +", " ", upper_case_text)
 
@@ -29,7 +34,7 @@ def read_pdf(pdf_name):
 
 def parse_pdf(pdf_name, names, proceeding, speakers_df, year):
     text, upper_case_text = read_pdf(pdf_name)
-    names = [name.lower() for name in names]
+    # names = [name.lower() for name in names]
     try:
         os.mkdir(Path("Data/speeches/" + year))
     except:
@@ -47,11 +52,15 @@ def parse_pdf(pdf_name, names, proceeding, speakers_df, year):
             pass
 
         if '\'' in name:
-            name = name.replace("\'", "")
+            name    = name.replace("\'", "")
+            name    = list(name)
+            name[1] = name[1].lower()
+            name    = ''.join(name)
+
         name = ''.join(char for char in unicodedata.normalize('NFKD', name) if unicodedata.category(char) != 'Mn')
 
-        country = speakers_df.loc[(speakers_df['surname'].str.lower() == original_name) & (speakers_df['proceeding'] == proceeding + '_E'), 'country'].values[0]
-        speakers_df.loc[(speakers_df['surname'].str.lower() == original_name) & (speakers_df['proceeding'] == proceeding + '_E'), 'position'] = find_speaker_position(name, text, speakers_df, proceeding, original_name, upper_case_text)
+        country = speakers_df.loc[(speakers_df['surname']== original_name) & (speakers_df['proceeding'] == proceeding + '_E'), 'country'].values[0]
+        speakers_df.loc[(speakers_df['surname']== original_name) & (speakers_df['proceeding'] == proceeding + '_E'), 'position'] = find_speaker_position(name, text, speakers_df, proceeding, original_name, upper_case_text)
 
         print("Name: {}".format(name))
         find_speaker_speech(name, text, name_order, country, proceeding, year)

@@ -18,8 +18,8 @@ chrome_options.add_experimental_option('prefs',  {
 driver = webdriver.Chrome(options=chrome_options)
 T1 = time.time()
 
-for i in tqdm(range(71, 74)):
-    for j in range(4, 28):
+for i in tqdm(range(47, 71)):
+    for j in range(4, 58):
         try:
             driver.get(base_url.format(i, j))
             iframe = driver.find_element_by_class_name("embed-responsive-item")

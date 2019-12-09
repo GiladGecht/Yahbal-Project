@@ -25,8 +25,8 @@ UPPER_BOUND = args.upper_bound
 LOWER_BOUND = args.lower_bound
 
 
-# For debugging use
-# YEAR = "2017"
+# # For debugging use
+# YEAR = "2015"
 # UPPER_BOUND = 100
 # LOWER_BOUND = 0
 
