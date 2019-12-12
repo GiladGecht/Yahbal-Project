@@ -25,13 +25,12 @@ UPPER_BOUND = args.upper_bound
 LOWER_BOUND = args.lower_bound
 
 
-# # For debugging use
+# For debugging use
 # YEAR = "2015"
 # UPPER_BOUND = 100
 # LOWER_BOUND = 0
 
 if __name__ == "__main__":
-
     yearly_df   = pd.DataFrame()
     speakers_df = load_data()
     data_folder = Path('Data/texts')
@@ -45,8 +44,9 @@ if __name__ == "__main__":
                 if (int(proceeding.split(".")[-1]) >= LOWER_BOUND) and (int(proceeding.split(".")[-1]) <= UPPER_BOUND):
                     print("\nProcessing Session: {}".format(file))
                     names = speakers_df[speakers_df['proceeding'] == proceeding + "_E"]['surname'].value_counts().index
+                    full_names = speakers_df[speakers_df['proceeding'] == proceeding + "_E"]['name'].value_counts().index
                     partial_df = speakers_df[speakers_df['proceeding'] == proceeding + "_E"]
-                    session_df, updated_position_df = parse_pdf(file, names, proceeding, speakers_df, YEAR)
+                    session_df, updated_position_df = parse_pdf(file, names, proceeding, speakers_df, YEAR, partial_df)
                     yearly_df = pd.concat((yearly_df, updated_position_df), axis=0)
 
         except Exception as e:

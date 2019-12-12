@@ -30,17 +30,15 @@ def read_pdf(pdf_name):
     return text, re.sub(" +", " ", upper_case_text)
 
 
-
-
-def parse_pdf(pdf_name, names, proceeding, speakers_df, year):
+def parse_pdf(pdf_name, names, proceeding, speakers_df, year, partial_df):
     text, upper_case_text = read_pdf(pdf_name)
-    # names = [name.lower() for name in names]
     try:
         os.mkdir(Path("Data/speeches/" + year))
     except:
         pass
 
     for name in names:
+        full_name = partial_df.loc[partial_df['surname'] == name, 'name'].values[0]
         name_order = {"speech": []}
         original_name = name
         # try:
@@ -57,13 +55,14 @@ def parse_pdf(pdf_name, names, proceeding, speakers_df, year):
             name[1] = name[1].lower()
             name    = ''.join(name)
 
+        full_name = ''.join(char for char in unicodedata.normalize('NFKD', full_name) if unicodedata.category(char) != 'Mn')
         name = ''.join(char for char in unicodedata.normalize('NFKD', name) if unicodedata.category(char) != 'Mn')
 
         country = speakers_df.loc[(speakers_df['surname']== original_name) & (speakers_df['proceeding'] == proceeding + '_E'), 'country'].values[0]
         speakers_df.loc[(speakers_df['surname']== original_name) & (speakers_df['proceeding'] == proceeding + '_E'), 'position'] = find_speaker_position(name, text, speakers_df, proceeding, original_name, upper_case_text)
 
         print("Name: {}".format(name))
-        find_speaker_speech(name, text, name_order, country, proceeding, year)
+        find_speaker_speech(name, text, name_order, country, proceeding, year, full_name)
 
     return pd.DataFrame(name_order), speakers_df.loc[speakers_df['proceeding'] == proceeding + '_E']
 
