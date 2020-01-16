@@ -2,18 +2,596 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3002bd1-b39d-477e-9f35-97438329fcf4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/bug_Eritrea_Mohammed_A_70_PV.28.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/bug_Republic of Korea_park_A_70_PV.13.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/bug_Yemen_hadi_A_70_PV.17.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/bug_Eritrea_mohammed_A_71_PV.22.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/bug_Mongolia_tsakhia_A_71_PV.10.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/bug_Myanmar_san_A_71_PV.11.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/bug_Yemen_hadi_A_71_PV.17.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/bug_Eritrea_mohammed_A_72_PV.21.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/bug_Monaco_ii_A_72_PV.5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/bug_Saint Vincent and the Grenadines_straker_A_72_PV.17.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/bug_Yemen_hadi_A_72_PV.11.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/2015.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/speeches/2015/2015.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Afghanistan_Abdullah_A_70_PV.15.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Albania_rama_A_70_PV.25.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Algeria_lamamra_A_70_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Andorra_petit_A_70_PV.25.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Angola_vicente_A_70_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Antigua and Barbuda_browne_A_70_PV.23.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Argentina_de_A_70_PV.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Armenia_sargsyan_A_70_PV.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Australia_bishop_A_70_PV.18.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Austria_kurz_A_70_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Azerbaijan_mammadyarov_A_70_PV.21.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Bahamas_mitchell_A_70_PV.24.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Bahrain_khalifa_A_70_PV.25.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Bangladesh_hasina_A_70_PV.19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Barbados_stuart_A_70_PV.25.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Belarus_Lukashenka_A_70_PV.15.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Belgium_michel_A_70_PV.19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Belize_elrington_A_70_PV.25.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Benin_zinsou_A_70_PV.21.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Bhutan_Dorji_A_70_PV.26.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Bolivia _Ayma_A_70_PV.15.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Bosnia and Herzegovina_covic_A_70_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Botswana_masisi_A_70_PV.23.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Brazil_rousseff_A_70_PV.13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Brunei Darussalam_bolkiah_A_70_PV.19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Bulgaria_plevneliev_A_70_PV.19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Burkina Faso_kafando_A_70_PV.25.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Burundi_butore_A_70_PV.23.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Cabo Verde_neves_A_70_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Cambodia_hor_A_70_PV.24.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Canada_Jean_A_70_PV.28.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Central African Republic_rangba_A_70_PV.21.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Chad_mahamat_A_70_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Chile_bachelet_A_70_PV.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/China_xi_A_70_PV.13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Colombia_calderon_A_70_PV.16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Comoros_dhoinine_A_70_PV.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Congo_gakosso_A_70_PV.25.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Costa Rica_rivera_A_70_PV.19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Croatia_kitarovic_A_70_PV.19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Cuba_ruz_A_70_PV.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Cyprus_anastasiades_A_70_PV.16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Czech Republic_zeman_A_70_PV.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Côte d'Ivoire_Kamon_A_70_PV.28.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Democratic People's Republic of Korea_su_A_70_PV.24.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Democratic Republic of the Congo_ntungamulongo_A_70_PV.24.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Denmark_rasmussen_A_70_PV.13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Djibouti_guelleh_A_70_PV.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Dominica_Baron_A_70_PV.28.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Dominican Republic_sanchez_A_70_PV.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Ecuador_Correa_A_70_PV.15.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Egypt_sisi_A_70_PV.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/El Salvador_Bonilla_A_70_PV.28.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Equatorial Guinea_obiang_A_70_PV.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Eritrea_Mohammed_A_70_PV.28.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Estonia_ilves_A_70_PV.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Ethiopia_desalegn_A_70_PV.13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/European Council_tusk_A_70_PV.16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Fiji_bainimarama_A_70_PV.19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Finland_niinisto_A_70_PV.16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/France_hollande_A_70_PV.13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Gabon_Ondimba_A_70_PV.15.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Gambia_saidy_A_70_PV.18.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Georgia_garibashvili_A_70_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Germany_steinmeier_A_70_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Ghana_mahama_A_70_PV.19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Greece_tsipras_A_70_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Grenada_curwin_A_70_PV.25.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Guatemala_Morales_A_70_PV.28.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Guinea-Bissau_gama_A_70_PV.27.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Guinea_Fall_A_70_PV.28.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Guyana_granger_A_70_PV.16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Haiti_martelly_A_70_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Holy See_gallagher_A_70_PV.27.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Honduras_flores_A_70_PV.27.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Hungary_Szijjarto_A_70_PV.28.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Iceland_sveinsson_A_70_PV.25.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/India_swaraj_A_70_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Indonesia_Kalla_A_70_PV.26.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Iran _rouhani_A_70_PV.13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Iraq_abadi_A_70_PV.21.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Ireland_flanagan_A_70_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Israel_netanyahu_A_70_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Italy_renzi_A_70_PV.16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Jamaica_Nicholson_A_70_PV.26.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Japan_abe_A_70_PV.16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Jordan_ii_A_70_PV.13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Kazakhstan_nazarbaev_A_70_PV.13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Kenya_Kenyatta_A_70_PV.15.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Kiribati_baaro_A_70_PV.27.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Kuwait_sabah_A_70_PV.16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Kyrgyzstan_abdyldaev_A_70_PV.24.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Lao People's Democratic Republic_sayasone_A_70_PV.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Latvia_vejonis_A_70_PV.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Lebanon_salam_A_70_PV.19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Lesotho_mosisili_A_70_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Liberia_sirleaf_A_70_PV.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Libya_gwaider_A_70_PV.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Liechtenstein_frick_A_70_PV.25.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Lithuania_grybauskaite_A_70_PV.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Luxembourg_asselborn_A_70_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Madagascar_rakotoarimanana_A_70_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Malawi_mutharika_A_70_PV.16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Malaysia_razak_A_70_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Maldives_Maumoon_A_70_PV.28.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Mali_Keita_A_70_PV.15.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Malta_muscat_A_70_PV.19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Marshall Islands_loeak_A_70_PV.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Mauritius_jugnauth_A_70_PV.25.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Mexico_nieto_A_70_PV.13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Micronesia _christian_A_70_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Monaco_tonelli_A_70_PV.21.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Mongolia_tsakhia_A_70_PV.16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Montenegro_vujanovic_A_70_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Morocco_rachid_A_70_PV.21.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Mozambique_nyusi_A_70_PV.13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Myanmar_Lwin_A_70_PV.26.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Namibia_geingob_A_70_PV.16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Nauru_waqa_A_70_PV.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Nepal_singh_A_70_PV.24.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Netherlands_alexander_A_70_PV.13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/New Zealand_key_A_70_PV.23.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Nicaragua_acevedo_A_70_PV.23.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Niger_Kane_A_70_PV.26.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Nigeria_Buhari_A_70_PV.15.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Norway_solberg_A_70_PV.19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Oman_Abdullah_A_70_PV.28.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Pakistan_sharif_A_70_PV.19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Palau_Otto_A_70_PV.28.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Panama_rodriguez_A_70_PV.19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Papua New Guinea_pato_A_70_PV.24.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Paraguay_Jara_A_70_PV.15.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Peru_cuadra velasquez_A_70_PV.27.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Philippines_Rosario_A_70_PV.26.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Poland_duda_A_70_PV.13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Portugal_silva_A_70_PV.13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Qatar_thani_A_70_PV.13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Republic of Korea_Park_A_70_PV.13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Republic of Moldova_strelet_A_70_PV.21.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Romania_iohannis_A_70_PV.16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Russian Federation_putin_A_70_PV.13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Rwanda_kagame_A_70_PV.16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Saint Kitts and Nevis_harris_A_70_PV.25.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Saint Lucia_Baptiste_A_70_PV.26.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Saint Vincent and the Grenadines_gonsalves_A_70_PV.18.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Samoa_malielegaoi_A_70_PV.21.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/San Marino_Bodini_A_70_PV.28.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Sao Tome and Principe_ramos_A_70_PV.25.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Saudi Arabia_jubeir_A_70_PV.24.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Senegal_Sall_A_70_PV.15.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Serbia_nikolic_A_70_PV.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Seychelles_michel_A_70_PV.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Sierra Leone_koroma_A_70_PV.16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Slovakia_lajcak_A_70_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Slovenia_cerar_A_70_PV.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Solomon Islands_sogavare_A_70_PV.23.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Somalia_sharmarke_A_70_PV.24.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/South Africa_zuma_A_70_PV.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/South Sudan_igga_A_70_PV.23.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Spain_margallo_A_70_PV.21.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Sri Lanka_sirisena_A_70_PV.19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/State of Palestine_abbas_A_70_PV.19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Sudan_ghandour_A_70_PV.25.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Suriname_Badrising_A_70_PV.28.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Swaziland_iii_A_70_PV.16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Sweden_lofven_A_70_PV.19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Switzerland_sommaruga_A_70_PV.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Syrian Arab Republic_moualem_A_70_PV.25.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Tajikistan_rahmon_A_70_PV.16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Thailand_o_A_70_PV.18.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/The former Yugoslav Republic of Macedonia_gruevski_A_70_PV.25.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Timor-Leste_araujo_A_70_PV.23.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Togo_gnassingbe_A_70_PV.19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Tonga_pohiva_A_70_PV.18.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Trinidad and Tobago_Moses_A_70_PV.26.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Tunisia_essid_A_70_PV.18.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Turkey_davutoglu_A_70_PV.19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Turkmenistan_ataeva_A_70_PV.27.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Tuvalu_Finikaso_A_70_PV.26.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Uganda_museveni_A_70_PV.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Ukraine_poroshenko_A_70_PV.16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/United Arab Emirates_Nahyan_A_70_PV.26.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/United Kingdom_hammond_A_70_PV.18.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/United Republic of Tanzania_kikwete_A_70_PV.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/United States_obama_A_70_PV.13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Uruguay_vazquez_A_70_PV.16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Venezuela _moros_A_70_PV.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Viet Nam_nguyen_A_70_PV.27.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Yemen_Hadi_A_70_PV.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Zambia_lungu_A_70_PV.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/Zimbabwe_mugabe_A_70_PV.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/bug_Mauritania_meimou_A_70_PV.18.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/bug_UN_Lykketoft_A_70_PV.28.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/bug_UN_lykketoft_A_70_PV.13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2015/bug_Vanuatu_kilman_A_70_PV.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/2016.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/speeches/2016/2016.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Afghanistan_danesh_A_71_PV.11.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Albania_nishani_A_71_PV.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Algeria_lamamra_A_71_PV.15.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Andorra_petit_A_71_PV.19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Angola_vicente_A_71_PV.15.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Antigua and Barbuda_browne_A_71_PV.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Argentina_macri_A_71_PV.8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Armenia_nalbandian_A_71_PV.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Australia_turnbull_A_71_PV.13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Austria_kurz_A_71_PV.13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Azerbaijan_mammadyarov_A_71_PV.19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Bahamas_mitchell_A_71_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Bahrain_khalifa_A_71_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Bangladesh_hasina_A_71_PV.13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Barbados_mcclean_A_71_PV.21.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Belarus_rybakov_A_71_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Belgium_michel_A_71_PV.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Belize_elrington_A_71_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Benin_talon_A_71_PV.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Bert) _koenders_A_71_PV.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Bhutan_dorji_A_71_PV.21.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Bolivia _ayma_A_71_PV.12.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Bosnia and Herzegovina_izetbegovic_A_71_PV.12.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Botswana_masisi_A_71_PV.18.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Brazil_temer_A_71_PV.8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Bulgaria_plevneliev_A_71_PV.15.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Burkina Faso_kabore_A_71_PV.15.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Burundi_nyamitwe_A_71_PV.21.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Cabo Verde_tavares_A_71_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Cambodia_sokhonn_A_71_PV.21.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Cameroon_biya_A_71_PV.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Canada_trudeau_A_71_PV.8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Central African Republic_touadera_A_71_PV.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Chad_itno_A_71_PV.8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Chile_bachelet_A_71_PV.11.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/China_li_A_71_PV.11.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Colombia_calderon_A_71_PV.11.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Comoros_assoumani_A_71_PV.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Congo_gakosso_A_71_PV.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Costa Rica_rivera_A_71_PV.10.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Côte d'Ivoire_Ouattara_A_71_PV.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Croatia_kitarovic_A_71_PV.12.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Cuba_parrilla_A_71_PV.16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Cyprus_anastasiades_A_71_PV.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Czechia_zeman_A_71_PV.12.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Democratic Republic of the Congo_ntungamulongo_A_71_PV.19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Denmark_petersen_A_71_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Dominica_baron_A_71_PV.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Dominican Republic_sanchez_A_71_PV.12.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Ecuador_long_A_71_PV.19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Egypt_sisi_A_71_PV.9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/El Salvador_ceren_A_71_PV.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Equatorial Guinea_mokuy_A_71_PV.16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Eritrea_Mohammed_A_71_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Estonia_ilves_A_71_PV.13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Ethiopia_dessalegn_A_71_PV.13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/European Council_tusk_A_71_PV.11.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Fiji_bainimarama_A_71_PV.8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Finland_niinisto_A_71_PV.11.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/France_hollande_A_71_PV.8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Gabon_ngondet_A_71_PV.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Gambia_saidy_A_71_PV.13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Georgia_kvirikashvili_A_71_PV.13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Germany_steinmeier_A_71_PV.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Ghana_mahama_A_71_PV.11.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Greece_tsipras_A_71_PV.16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Grenada_nimrod_A_71_PV.21.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Guatemala_morales_A_71_PV.15.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Guinea-Bissau_vaz_A_71_PV.12.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Guinea_conde_A_71_PV.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Guyana_granger_A_71_PV.8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Haiti_privert_A_71_PV.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Holy See_parolin_A_71_PV.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Honduras_alvarado_A_71_PV.13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Hungary_szijjarto_A_71_PV.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Iceland_alfredsdottir_A_71_PV.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/India_swaraj_A_71_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Indonesia_kalla_A_71_PV.18.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Iran _rouhani_A_71_PV.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Iraq_abadi_A_71_PV.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Ireland_flanagan_A_71_PV.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Israel_netanyahu_A_71_PV.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Italy_renzi_A_71_PV.10.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Jamaica_holness_A_71_PV.18.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Japan_abe_A_71_PV.11.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Jordan_ii_A_71_PV.8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Kazakhstan_idrissov_A_71_PV.16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Kenya_ruto_A_71_PV.11.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Kiribati_maamau_A_71_PV.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Kuwait_sabah_A_71_PV.11.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Kyrgyzstan_abdyldaev_A_71_PV.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Lao People's Democratic Republic_sisoulith_A_71_PV.18.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Latvia_vejonis_A_71_PV.12.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Lebanon_salam_A_71_PV.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Lesotho_mosisili_A_71_PV.18.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Liberia_sirleaf_A_71_PV.15.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Libya_serraj_A_71_PV.15.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Liechtenstein_frick_A_71_PV.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Lithuania_grybauskaite_A_71_PV.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Luxembourg_bettel_A_71_PV.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Madagascar_rakotoarimanana_A_71_PV.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Malawi_mutharika_A_71_PV.8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Malaysia_hamidi_A_71_PV.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Maldives_asim_A_71_PV.21.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Mali_keita_A_71_PV.18.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Malta_muscat_A_71_PV.16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Marshall Islands_heine_A_71_PV.15.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Mauritania_bih_A_71_PV.21.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Mauritius_jugnauth_A_71_PV.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Mexico_nieto_A_71_PV.10.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Micronesia _christian_A_71_PV.12.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Monaco_telle_A_71_PV.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Mongolia_Tsakhia_A_71_PV.10.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Morocco_mezouar_A_71_PV.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Mozambique_nyusi_A_71_PV.12.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Myanmar_San_A_71_PV.11.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Namibia_geingob_A_71_PV.11.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Nauru_waqa_A_71_PV.13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Nepal_mahat_A_71_PV.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/New Zealand_key_A_71_PV.10.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Nicaragua_acevedo_A_71_PV.18.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Niger_issoufou_A_71_PV.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Nigeria_buhari_A_71_PV.9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Norway_solberg_A_71_PV.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Oman_abdullah_A_71_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Pakistan_sharif_A_71_PV.11.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Palau_otto_A_71_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Panama_rodriguez_A_71_PV.10.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Papua New Guinea_temu_A_71_PV.16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Paraguay_lezcano_A_71_PV.16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Peru_godard_A_71_PV.8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Philippines_yasay_A_71_PV.21.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Poland_duda_A_71_PV.9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Portugal_de_A_71_PV.10.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Qatar_thani_A_71_PV.8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Republic of Korea_yun_A_71_PV.16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Republic of Moldova_filip_A_71_PV.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Romania_ciolos_A_71_PV.13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Russian Federation_lavrov_A_71_PV.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Rwanda_kagame_A_71_PV.15.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Saint Kitts and Nevis_harris_A_71_PV.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Saint Lucia_chastanet_A_71_PV.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Saint Vincent and the Grenadines_gonsalves_A_71_PV.19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Samoa_malielegaoi_A_71_PV.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/San Marino_valentini_A_71_PV.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Sao Tome and Principe_trovoada_A_71_PV.19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Saudi Arabia_mohammed_A_71_PV.11.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Senegal_sall_A_71_PV.10.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Serbia_vucic_A_71_PV.15.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Seychelles_potter_A_71_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Sierra Leone_koroma_A_71_PV.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Singapore_balakrishnan_A_71_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Slovakia_kiska_A_71_PV.8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Slovenia_pahor_A_71_PV.9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Solomon Islands_sogavare_A_71_PV.18.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Somalia_omer_A_71_PV.21.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/South Africa_zuma_A_71_PV.9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/South Sudan_gai_A_71_PV.18.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Spain_felipe_A_71_PV.10.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Sri Lanka_sirisena_A_71_PV.12.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/State of Palestine_abbas_A_71_PV.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Sudan_ghandour_A_71_PV.21.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Suriname_badrising_A_71_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Swaziland_dlamini_A_71_PV.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Sweden_wallstrom_A_71_PV.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Switzerland_ammann_A_71_PV.8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Syrian Arab Republic_moualem_A_71_PV.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Tajikistan_aslov_A_71_PV.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Thailand_o_A_71_PV.13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/The former Yugoslav Republic of Macedonia_ivanov_A_71_PV.15.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Timor-Leste_araujo_A_71_PV.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Togo_kpayedo_A_71_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Tonga_pohiva_A_71_PV.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Trinidad and Tobago_moses_A_71_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Tunisia_essebsi_A_71_PV.9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Turkey_erdogan_A_71_PV.8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Turkmenistan_meredov_A_71_PV.16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Tuvalu_sopoaga_A_71_PV.19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/UN_rahming_A_71_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Uganda_museveni_A_71_PV.9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Ukraine_poroshenko_A_71_PV.11.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/United Arab Emirates_nahyan_A_71_PV.21.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/United Kingdom_may_A_71_PV.8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/United Republic of Tanzania_mahiga_A_71_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/United States_obama_A_71_PV.8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Uruguay_vazquez_A_71_PV.8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Uzbekistan_kamilov_A_71_PV.19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Vanuatu_salwai_A_71_PV.19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Venezuela _gomez_A_71_PV.19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Viet Nam_pham_A_71_PV.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Yemen_Hadi_A_71_PV.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Zambia_lungu_A_71_PV.10.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/Zimbabwe_mugabe_A_71_PV.11.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/bug_Democratic People's Republic of Korea_ri_A_71_PV.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/bug_Montenegro_dukanovic_A_71_PV.11.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/bug_UN_eliasson_A_71_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2016/bug_UN_thomson_A_71_PV.8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/2017.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/speeches/2017/2017.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Albania_rama_A_72_PV.15.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Algeria_messahel_A_72_PV.16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Andorra_petit_A_72_PV.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Angola_martins_A_72_PV.23.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Antigua and Barbuda_browne_A_72_PV.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Argentina_illia_A_72_PV.9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Armenia_sargsyan_A_72_PV.5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Australia_bishop_A_72_PV.16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Austria_kurz_A_72_PV.6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Azerbaijan_aliyev_A_72_PV.7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Bahamas_henfield_A_72_PV.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Bahrain_khalifa_A_72_PV.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Bangladesh_hasina_A_72_PV.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Barbados_mcclean_A_72_PV.18.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Belarus_makei_A_72_PV.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Belgium_michel_A_72_PV.15.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Belize_elrington_A_72_PV.18.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Benin_agbenonci_A_72_PV.18.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Bhutan_tobgay_A_72_PV.15.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Bolivia _ayma_A_72_PV.6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Bosnia and Herzegovina_covic_A_72_PV.7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Botswana_masisi_A_72_PV.12.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Brunei Darussalam_seng_A_72_PV.18.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Bulgaria_radev_A_72_PV.7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Burkina Faso_kabore_A_72_PV.11.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Burundi_nyamitwe_A_72_PV.21.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Cabo Verde_e_A_72_PV.15.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Cambodia_sokhonn_A_72_PV.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Cameroon_biya_A_72_PV.15.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Canada_trudeau_A_72_PV.12.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Central African Republic_touadera_A_72_PV.15.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Chile_bachelet_A_72_PV.9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/China_wang_A_72_PV.12.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Colombia_calderon_A_72_PV.4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Comoros_assoumani_A_72_PV.13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Congo_nguesso_A_72_PV.9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Costa Rica_rivera_A_72_PV.5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Côte d'Ivoire_Ouattara_A_72_PV.8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Croatia_plenkovic_A_72_PV.12.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Cuba_parrilla_A_72_PV.16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Cyprus_anastasiades_A_72_PV.11.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Democratic People's Republic of Korea_ri_A_72_PV.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Democratic Republic of the Congo_kabange_A_72_PV.19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Djibouti_youssouf_A_72_PV.19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Dominica_skerrit_A_72_PV.19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Dominican Republic_maldonado_A_72_PV.10.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Ecuador_garces_A_72_PV.9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Egypt_sisi_A_72_PV.5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/El Salvador_ceren_A_72_PV.13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Equatorial Guinea_nguema_A_72_PV.13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Eritrea_Mohammed_A_72_PV.21.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Estonia_kaljulaid_A_72_PV.6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Ethiopia_desalegn_A_72_PV.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/European Council_tusk_A_72_PV.8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Fiji_bainimarama_A_72_PV.10.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Finland_niinisto_A_72_PV.7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/France_macron_A_72_PV.4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Gabon_ondimba_A_72_PV.11.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Gambia_barrow_A_72_PV.6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Georgia_kvirikashvili_A_72_PV.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Germany_gabriel_A_72_PV.12.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Ghana_addo_A_72_PV.11.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Greece_kotzias_A_72_PV.18.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Grenada_nimrod_A_72_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Guatemala_morales_A_72_PV.6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Guinea-Bissau_embalo_A_72_PV.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Guyana_granger_A_72_PV.7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Haiti_moise_A_72_PV.11.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Holy See_gallagher_A_72_PV.23.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Honduras_alvarado_A_72_PV.6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Hungary_szijjarto_A_72_PV.16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Iceland_thordarson_A_72_PV.16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/India_swaraj_A_72_PV.19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Indonesia_kalla_A_72_PV.13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Iran _rouhani_A_72_PV.7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Iraq_jafari_A_72_PV.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Ireland_coveney_A_72_PV.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Israel_netanyahu_A_72_PV.4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Italy_silveri_A_72_PV.8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Jamaica_smith_A_72_PV.21.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Japan_abe_A_72_PV.8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Jordan_ii_A_72_PV.13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Kazakhstan_abdrakhmanov_A_72_PV.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Kenya_mohamed_A_72_PV.16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Kiribati_maamau_A_72_PV.15.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Kuwait_sabah_A_72_PV.10.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Kyrgyzstan_atambaev_A_72_PV.7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Lao People's Democratic Republic_kommasith_A_72_PV.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Latvia_vejonis_A_72_PV.9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Lebanon_aoun_A_72_PV.11.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Lesotho_thabane_A_72_PV.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Liberia_sirleaf_A_72_PV.4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Libya_serraj_A_72_PV.10.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Liechtenstein_frick_A_72_PV.18.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Lithuania_grybauskaite_A_72_PV.4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Luxembourg_asselborn_A_72_PV.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Madagascar_rakotoarimanana_A_72_PV.10.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Malawi_mutharika_A_72_PV.10.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Malaysia_aman_A_72_PV.18.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Maldives_asim_A_72_PV.21.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Mali_keita_A_72_PV.5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Malta_muscat_A_72_PV.15.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Marshall Islands_silk_A_72_PV.21.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Mauritania_bih_A_72_PV.6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Mauritius_jugnauth_A_72_PV.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Mexico_caso_A_72_PV.12.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Mexico_caso_A_72_PV.7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Micronesia _george_A_72_PV.19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Monaco_II_A_72_PV.5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Mongolia_orgil_A_72_PV.18.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Montenegro_vujanovic_A_72_PV.9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Morocco_bourita_A_72_PV.10.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Mozambique_gumende_A_72_PV.23.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Myanmar_thio_A_72_PV.10.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Namibia_geingob_A_72_PV.9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Nauru_waqa_A_72_PV.10.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Nepal_deuba_A_72_PV.19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Netherlands_rutte_A_72_PV.8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/New Zealand_hawke_A_72_PV.23.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Nicaragua_de_A_72_PV.23.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Niger_yacoubou_A_72_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Norway_hattrem_A_72_PV.23.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Oman_abdullah_A_72_PV.21.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Pakistan_abbasi_A_72_PV.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Palau_remengesau_A_72_PV.13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Panama_rodriguez_A_72_PV.7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Paraguay_jara_A_72_PV.7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Peru_cuadra velasquez_A_72_PV.23.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Philippines_cayetano_A_72_PV.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Poland_duda_A_72_PV.5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Portugal_costa_A_72_PV.8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Qatar_thani_A_72_PV.4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Republic of Korea_moon_A_72_PV.11.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Republic of Moldova_filip_A_72_PV.15.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Romania_iohannis_A_72_PV.10.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Russian Federation_lavrov_A_72_PV.12.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Rwanda_kagame_A_72_PV.7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Saint Kitts and Nevis_brantley_A_72_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Saint Lucia_chastanet_A_72_PV.16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Saint Vincent and the Grenadines_Straker_A_72_PV.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Samoa_malielegaoi_A_72_PV.12.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/San Marino_renzi_A_72_PV.18.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Sao Tome and Principe_carvalho_A_72_PV.13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Saudi Arabia_jubeir_A_72_PV.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Senegal_sall_A_72_PV.10.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Serbia_vucic_A_72_PV.11.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Seychelles_faure_A_72_PV.12.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Sierra Leone_kamara_A_72_PV.18.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Singapore_balakrishnan_A_72_PV.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Slovenia_cerar_A_72_PV.12.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Solomon Islands_sogavare_A_72_PV.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Somalia_khayre_A_72_PV.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/South Africa_zuma_A_72_PV.9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/South Sudan_gai_A_72_PV.19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Spain_dastis_A_72_PV.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Sri Lanka_sirisena_A_72_PV.6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/State of Palestine_abbas_A_72_PV.8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Sudan_ghandour_A_72_PV.21.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Suriname_beigle_A_72_PV.21.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Swaziland_iii_A_72_PV.10.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Sweden_wallstrom_A_72_PV.16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Syrian Arab Republic_moualem_A_72_PV.19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Tajikistan_rahmon_A_72_PV.4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Thailand_pramudwinai_A_72_PV.16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/The former Yugoslav Republic of Macedonia_zaev_A_72_PV.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Timor-Leste_pires_A_72_PV.23.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Togo_klassou_A_72_PV.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Tonga_vi_A_72_PV.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Trinidad and Tobago_moses_A_72_PV.21.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Tunisia_jhinaoui_A_72_PV.16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Turkey_erdogan_A_72_PV.4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Turkmenistan_ataeva_A_72_PV.23.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Tuvalu_sopoaga_A_72_PV.13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Uganda_museveni_A_72_PV.5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Ukraine_poroshenko_A_72_PV.8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/United Arab Emirates_nahyan_A_72_PV.18.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/United Kingdom_may_A_72_PV.8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/United Republic of Tanzania_mahiga_A_72_PV.22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Uruguay_novoa_A_72_PV.23.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Uzbekistan_mirziyoyev_A_72_PV.5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Vanuatu_tabimasmas_A_72_PV.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Venezuela _arreaza_A_72_PV.23.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Viet Nam_pham_A_72_PV.15.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Yemen_Hadi_A_72_PV.11.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Zambia_lungu_A_72_PV.4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/Zimbabwe_mugabe_A_72_PV.13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/bug_Afghanistan_ghani_A_72_PV.6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/bug_Chad_taha_A_72_PV.21.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/bug_Denmark_tornaes_A_72_PV.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/bug_Papua New Guinea_Oneill_A_72_PV.19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/speeches/2017/bug_UN_lajcak_A_72_PV.23.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fill_position.py" beforeDir="false" afterPath="$PROJECT_DIR$/fill_position.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fill_speech.py" beforeDir="false" afterPath="$PROJECT_DIR$/fill_speech.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
@@ -29,8 +607,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="259">
+              <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
               <folding>
                 <element signature="e#61#99#0" expanded="true" />
               </folding>
@@ -39,24 +617,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/get_pdf_files.py">
+        <entry file="file://$PROJECT_DIR$/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+            <state relative-caret-position="-191">
+              <caret line="42" column="87" selection-start-line="42" selection-start-column="87" selection-end-line="42" selection-end-column="87" />
               <folding>
-                <element signature="e#0#30#0" expanded="true" />
+                <element signature="e#0#24#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/utils.py">
+        <entry file="file://$PROJECT_DIR$/compare_texts.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="64" selection-start-line="64" selection-end-line="64" />
+            <state relative-caret-position="106">
+              <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
               <folding>
-                <element signature="e#0#24#0" expanded="true" />
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,8 +643,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fill_speech.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="777">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="315">
+              <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -85,18 +663,9 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sixtieth</find>
-      <find>Israel</find>
-      <find>Netn</find>
-      <find>Rajaonarimampianina</find>
-      <find>albert</find>
-      <find>President</find>
-      <find>open</find>
       <find>process_pd</find>
       <find>process_pdf</find>
       <find>name_order</find>
-      <find>position</find>
-      <find>country</find>
       <find>[:2]</find>
       <find>[:4]</find>
       <find>pdfmi</find>
@@ -111,11 +680,25 @@
       <find>gover</find>
       <find>goverm</find>
       <find>21</find>
-      <find>name</find>
       <find>name.low</find>
       <find>Our motto</find>
       <find>in the shade</find>
+      <find>upper_case_te</find>
+      <find>position</find>
+      <find>15</find>
+      <find>10</find>
+      <find>upper_case_text</find>
+      <find>country</find>
+      <find>speakers</find>
+      <find>surname</find>
+      <find>surnam</find>
+      <find>name</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>10</replace>
+      <replace>9</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -137,20 +720,21 @@
         <option value="$PROJECT_DIR$/convert_json_to_txt.py" />
         <option value="$PROJECT_DIR$/Data/utils.py" />
         <option value="$PROJECT_DIR$/extract_speeches.py" />
-        <option value="$PROJECT_DIR$/fill_position.py" />
         <option value="$PROJECT_DIR$/test2.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/get_pdf_files.py" />
-        <option value="$PROJECT_DIR$/utils.py" />
+        <option value="$PROJECT_DIR$/fill_position.py" />
         <option value="$PROJECT_DIR$/fill_speech.py" />
+        <option value="$PROJECT_DIR$/utils.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/compare_texts.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
-    <option name="width" value="1734" />
+    <option name="width" value="1722" />
     <option name="height" value="1407" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -175,7 +759,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Telebot" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -199,8 +783,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
-    <configuration name="extract_speeches" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.compare_texts">
+    <configuration name="compare_texts" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="yahbal" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -212,7 +796,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Gilad Gecht\yahbal\main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/compare_texts.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="fill_position" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="yahbal" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fill_position.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -263,27 +868,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="yahbal" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="utils" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="yahbal" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -307,11 +891,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.compare_texts" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.get_pdf_files" />
-        <item itemvalue="Python.test (1)" />
+        <item itemvalue="Python.fill_position" />
         <item itemvalue="Python.utils" />
-        <item itemvalue="Python.extract_speeches" />
+        <item itemvalue="Python.get_pdf_files" />
       </list>
     </recent_temporary>
   </component>
@@ -329,16 +913,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1734" height="1407" extended-state="0" />
+    <frame x="-7" y="0" width="1722" height="1407" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13620283" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15023753" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32967034" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32810047" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.24646781" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32810047" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.366562" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -352,13 +936,13 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13620283" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2734237" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32967034" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32810047" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.24646781" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32731554" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.40188384" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -376,9 +960,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/fill_speech.py</url>
-          <line>6</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>54</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/compare_texts.py</url>
+          <line>52</line>
+          <option name="timeStamp" value="48" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -403,47 +992,47 @@
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>re.split(r'{}(.{{1,10}})(\s\((.+?)\)){{0,3}}\s?:(.+?)(The President(\s\((.+?)\)){{0,3}}\s?:|The Acting President(\s\((.+?)\)){{0,3}}\s?:|\.\s?The meeting rose)'.format(full_name.split()[partial_name][:4]), text)</expression-string>
+        <expression-string>eval(data)['speech']['0']</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>re.split(r'{}(.{{1,10}})(\s\((.+?)\)){{0,3}}\s?:(.+?)(The President(\s\((.+?)\)){{0,3}}\s?:|The Acting President(\s\((.+?)\)){{0,3}}\s?:|\.\s?The meeting rose)'.format(full_name.split()[partial_name][:5]), text)</expression-string>
+        <expression-string>harvard_data</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>re.split(r'{}(.{{1,10}})(\s\((.+?)\)){{0,3}}\s?:(.+?)(The President(\s\((.+?)\)){{0,3}}\s?:|The Acting President(\s\((.+?)\)){{0,3}}\s?:|\.\s?The meeting rose)'.format(full_name.split()[partial_name][:3]), text)</expression-string>
+        <expression-string>gilad_speeches</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>full_name.split()[partial_name][:5]</expression-string>
+        <expression-string>documents</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>re.split(r'{}(.{{1,10}})(\s\((.+?)\)){{0,3}}\s?:(.+?)(The President(\s\((.+?)\)){{0,3}}\s?:|The Acting President(\s\((.+?)\)){{0,3}}\s?:|\.\s?The meeting rose)'.format(name[:3]), text)</expression-string>
+        <expression-string>df.loc[(df['surname'] == name) &amp; (df['proceeding'] == proceeding), 'word_count_diff']</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>len([1, 2, 3])</expression-string>
+        <expression-string>df.loc[(df['surname'] == name) &amp; (df['proceeding'] == proceeding), 'similarity_score']</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>re.split(r'{}(\s\w+\s?){{0,2}}(\s\((.+?)\)){{0,3}}\s?:(.+?)(The President(\s\((.+?)\))?\s?:|The Acting President(\s\((.+?)\))?\s?:|\.\s?The meeting rose)'.format(&quot;Mansour&quot;), text)</expression-string>
+        <expression-string>pycountry.countries.get(alpha_3=country)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>re.split(r'{}(\s\w+\s?){{0,2}}(\s\((.+?)\)){{0,3}}\s?:(.+?)(The President(\s\((.+?)\))?\s?:|The Acting President(\s\((.+?)\))?\s?:|\.\s?The meeting rose)'.format(name), text)</expression-string>
+        <expression-string>pycountry.countries.get(alpha_3=country).name.split(',')[0]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>re.split(r'{}(\s\w+\s?){{0,2}}(\s\((.+?)\)){{0,3}}\s?:(.+?)(The President(\s\((.+?)\))?\s?:|The Acting President(\s\((.+?)\))?\s?:|\.\s?The meeting rose)'.format(name), text)[4]</expression-string>
+        <expression-string>pycountry.countries.get(alpha_3=country).name.split(',')</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -520,13 +1109,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="57" lean-forward="true" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Data/speeches/gassymov_A_47_PV.11.txt" />
     <entry file="file://$PROJECT_DIR$/../PycharmProjects/DepressionResearch/mras_utils.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -578,17 +1160,51 @@
     <entry file="file://$PROJECT_DIR$/geckodriver.log">
       <provider selected="true" editor-type-id="LogFileEditorProvider" />
     </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_pdf_files.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/fill_position.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="73" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
+        <state relative-caret-position="390">
+          <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/Converted sessions/Session 33 - 1978/ESP_33_1978.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="303" selection-start-line="1" selection-start-column="303" selection-end-line="1" selection-end-column="303" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-191">
+          <caret line="42" column="87" selection-start-line="42" selection-start-column="87" selection-end-line="42" selection-end-column="87" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fill_speech.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="777">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="315">
+          <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -597,30 +1213,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="259">
+          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
           <folding>
             <element signature="e#61#99#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/get_pdf_files.py">
+    <entry file="file://$PROJECT_DIR$/compare_texts.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+        <state relative-caret-position="106">
+          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
           <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -8,7 +8,7 @@ def find_speaker_speech(name, text, name_order, country, proceeding, year, full_
         if name not in text:
             try:
                 # if the name has non-english letters check only part of the name
-                speech = re.split(r'{}(.{{1,10}})(\s\((.+?)\)){{0,3}}\s?:(.+?)(The President(\s\((.+?)\)){{0,3}}\s?:|The Acting President(\s\((.+?)\)){{0,3}}\s?:|\.\s?The meeting rose)'.format(name[:3]), text)[4]
+                speech = re.split(r'{}(.{{1,10}})(\s\((.+?)\)){{0,7}}\s?:(.+?)(The President(\s\((.+?)\)){{0,7}}\s?:|The Acting President(\s\((.+?)\)){{0,7}}\s?:|\.\s?The meeting rose)'.format(name[:3]), text)[4]
                 name_order['speech'].append(speech)
                 speech = pd.DataFrame(name_order)
                 with open(Path("Data/speeches/" + year + "/{}_{}_{}.json".format(country, name, proceeding)), 'w', encoding='utf-8') as file:
@@ -16,7 +16,7 @@ def find_speaker_speech(name, text, name_order, country, proceeding, year, full_
             except:
                 for partial_name in range(len(full_name.split())):
                     try:
-                        speech = re.split(r'{}(.{{1,10}})(\s\((.+?)\)){{0,3}}\s?:(.+?)(The President(\s\((.+?)\)){{0,3}}\s?:|The Acting President(\s\((.+?)\)){{0,3}}\s?:|\.\s?The meeting rose)'.format(full_name.split()[partial_name][:4]), text)[4]
+                        speech = re.split(r'{}(.{{1,10}})(\s\((.+?)\)){{0,7}}\s?:(.+?)(The President(\s\((.+?)\)){{0,7}}\s?:|The Acting President(\s\((.+?)\)){{0,7}}\s?:|\.\s?The meeting rose)'.format(full_name.split()[partial_name][:4]), text)[4]
                         name_order['speech'].append(speech)
                         speech = pd.DataFrame(name_order)
                         with open(Path("Data/speeches/" + year + "/{}_{}_{}.json".format(country, name, proceeding)), 'w', encoding='utf-8') as file:
@@ -31,7 +31,7 @@ def find_speaker_speech(name, text, name_order, country, proceeding, year, full_
                         next
 
         else:
-            speech = re.split(r'{}(\s\w+\s?){{0,2}}(\s\((.+?)\)){{0,3}}\s?:(.+?)(The President(\s\((.+?)\))?\s?:|The Acting President(\s\((.+?)\))?\s?:|\.\s?The meeting rose)'.format(name), text)[4]
+            speech = re.split(r'{}(\s\w+\s?){{0,7}}(\s\((.+?)\)){{0,7}}\s?:(.+?)(The President(\s\((.+?)\))?\s?:|The Acting President(\s\((.+?)\))?\s?:|\.\s?The meeting rose)'.format(name), text)[4]
             name_order['speech'].append(speech)
             speech = pd.DataFrame(name_order)
             with open(Path("Data/speeches/" + year + "/{}_{}_{}.json".format(country, name, proceeding)), 'w', encoding='utf-8') as file:
@@ -40,7 +40,7 @@ def find_speaker_speech(name, text, name_order, country, proceeding, year, full_
     except:
         for partial_name in range(len(full_name.split())):
             try:
-                speech = re.split(r'{}(.{{1,10}})(\s\((.+?)\)){{0,3}}\s?:(.+?)(The President(\s\((.+?)\)){{0,3}}\s?:|The Acting President(\s\((.+?)\)){{0,3}}\s?:|\.\s?The meeting rose)'.format(full_name.split()[partial_name][:4]), text)[4]
+                speech = re.split(r'{}(.{{1,10}})(\s\((.+?)\)){{0,7}}\s?:(.+?)(The President(\s\((.+?)\)){{0,7}}\s?:|The Acting President(\s\((.+?)\)){{0,7}}\s?:|\.\s?The meeting rose)'.format(full_name.split()[partial_name][:4]), text)[4]
                 name_order['speech'].append(speech)
                 speech = pd.DataFrame(name_order)
                 with open(Path("Data/speeches/" + year + "/{}_{}_{}.json".format(country, name, proceeding)), 'w', encoding='utf-8') as file:

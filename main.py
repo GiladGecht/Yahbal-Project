@@ -14,21 +14,21 @@ import argparse
 
 warnings.simplefilter("ignore")
 
-parser = argparse.ArgumentParser()
-parser.add_argument("year", help="The year you wish to extract speeches from")
-parser.add_argument("lower_bound", help="the proceeding's number to start from", nargs="?", const=1, type=int, default=0)
-parser.add_argument("upper_bound", help="the final proceeding's number", nargs="?", const=1, type=int, default=100)
-
-args        = parser.parse_args()
-YEAR        = args.year
-UPPER_BOUND = args.upper_bound
-LOWER_BOUND = args.lower_bound
+# parser = argparse.ArgumentParser()
+# parser.add_argument("year", help="The year you wish to extract speeches from")
+# parser.add_argument("lower_bound", help="the proceeding's number to start from", nargs="?", const=1, type=int, default=0)
+# parser.add_argument("upper_bound", help="the final proceeding's number", nargs="?", const=1, type=int, default=100)
+#
+# args        = parser.parse_args()
+# YEAR        = args.year
+# UPPER_BOUND = args.upper_bound
+# LOWER_BOUND = args.lower_bound
 
 
 # For debugging use
-# YEAR = "2015"
-# UPPER_BOUND = 100
-# LOWER_BOUND = 0
+YEAR        = "2010"
+LOWER_BOUND = 11
+UPPER_BOUND = 24
 
 if __name__ == "__main__":
     yearly_df   = pd.DataFrame()
@@ -43,11 +43,13 @@ if __name__ == "__main__":
             if proceeding_number == str(int(YEAR) - 1945):
                 if (int(proceeding.split(".")[-1]) >= LOWER_BOUND) and (int(proceeding.split(".")[-1]) <= UPPER_BOUND):
                     print("\nProcessing Session: {}".format(file))
-                    names = speakers_df[speakers_df['proceeding'] == proceeding + "_E"]['surname'].value_counts().index
-                    full_names = speakers_df[speakers_df['proceeding'] == proceeding + "_E"]['name'].value_counts().index
+                    names = speakers_df[speakers_df['proceeding'] == proceeding + "_E"]['speaker_surname'].value_counts().index
+                    full_names = speakers_df[speakers_df['proceeding'] == proceeding + "_E"]['speaker_name'].value_counts().index
                     partial_df = speakers_df[speakers_df['proceeding'] == proceeding + "_E"]
                     session_df, updated_position_df = parse_pdf(file, names, proceeding, speakers_df, YEAR, partial_df)
                     yearly_df = pd.concat((yearly_df, updated_position_df), axis=0)
+                    # yearly_df.to_csv(Path("Data/speeches/" + YEAR + '/{}.csv'.format(YEAR), index=False))
+
 
         except Exception as e:
             print(e)

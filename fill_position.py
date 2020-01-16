@@ -1,43 +1,70 @@
 import re
 
+# re.split(r'(The Acting President|The President|\.)', text.split('{}'.format(name[0].upper() + name[1:4]))[1])[0].split(", ")[1]
 
-def find_speaker_position(name, text, speakers_df, proceeding, original_name, upper_case_text):
+# first = re.search(r"{}(\s?\w+-?\s?){{0,9}},(\s?\w+){{0,9}},".format(name), text).regs[0][0]
+# second = re.search(r"{}(\s?\w+-?\s?){{0,9}},(\s?\w+){{0,9}},".format(name), text).regs[0][1]
+# text[first:second].split(",")[1][1:]
+
+
+
+
+def find_speaker_position(name, text, speakers_df, proceeding, original_name, full_name):
     try:
         if name not in text:
             try:
-                speakers_df.loc[(speakers_df['surname'].str.lower() == original_name) & (speakers_df['proceeding'] == proceeding + '_E'), 'position'] = re.split(r'(The Acting President|The President|\.)', upper_case_text.split('{}'.format(name[0].upper() + name[1:4]))[1])[0]
-            except:
-                pass
-        else:
-            speakers_df.loc[(speakers_df['surname'].str.lower() == original_name) & (speakers_df['proceeding'] == proceeding + '_E'), 'position'] = re.split(r'(The Acting President|The President|\.)', upper_case_text.split('{}'.format(name[0].upper() + name[1:]))[1])[0]
-            # print("Made in 1: {}".format(name))
-    except:
-        # currently for names cant be found like vucic or kabore
-        print("Could not find position - {}".format(name))
-
-        try:
-            if name not in text:
-                try:
-                    speakers_df.loc[(speakers_df['surname'].str.lower() == original_name) & (speakers_df['proceeding'] == proceeding + '_E'), 'position'] = re.split(r'(The Acting President|The President|\.)', upper_case_text.split('{},'.format(name[0].upper() + name[1:4]))[1])[0].split(",")[0]
-                except:
-                    pass
-            else:
-                speakers_df.loc[(speakers_df['surname'].str.lower() == original_name) & (speakers_df['proceeding'] == proceeding + '_E'), 'position'] = re.split(r'(The Acting President|The President|\.)', upper_case_text.split('{},'.format(name[0].upper() + name[1:]))[1])[0].split(",")[0]
-                # print("Made in 2: {}".format(name))
-        except:
-            print("Could not find position - {}".format(name))
-
-            try:
-                if name not in text:
-                    try:
-                        speakers_df.loc[(speakers_df['surname'].str.lower() == original_name) & (speakers_df['proceeding'] == proceeding + '_E'), 'position'] = re.split(r'(the acting president|the president|\.)', text.split('{}'.format(name[:4]))[1])[0]
-                    except:
-                        pass
+                pos = re.search(r"{}(\s?\w+-?\s?){{0,5}}(?=,)(.+?)(?=(The President|The Acting President|,)))".format(name[:3]), text)
+                if pos == None:
+                    pos = re.search(r"{}(\s?\w+-?\s?){{0,5}},(\s?\w+){{0,9}}(\.?\s?),".format(name[:3]), text).group().split(", ")[1].split(",")[0]
                 else:
-                    speakers_df.loc[(speakers_df['surname'].str.lower() == original_name) & (speakers_df['proceeding'] == proceeding + '_E'), 'position'] = re.split(r'(the acting president|the president|\.)', text.split('{}'.format(name))[1])[0]
-                    # print("Made in 3: {}".format(name))
-            except:
-                print("Could not find position - {}".format(name))
-                pass
+                    pos = pos.group().split(", ")[1].split("The")[0]
 
-    return speakers_df.loc[(speakers_df['surname'].str.lower() == original_name) & (speakers_df['proceeding'] == proceeding + '_E'), 'position']
+                # speakers_df.loc[(speakers_df['surname'] == original_name) & (speakers_df['proceeding'] == proceeding + '_E'), 'position'] = pos
+                return pos #speakers_df.loc[(speakers_df['surname'] == original_name) & (speakers_df['proceeding'] == proceeding + '_E'), 'position']
+
+            except:
+                for partial_name in range(len(full_name.split())):
+                    try:
+                        pos = re.search(r"{}(\s?\w+-?\s?){{0,5}}(?=,)(.+?)(?=(The President|The Acting President|,))".format(full_name.split()[partial_name][:4]), text)
+                        if pos == None:
+                            pos = re.search(r"{}(\s?\w+-?\s?){{0,5}},(\s?\w+){{0,9}}(\.?\s?),".format(full_name.split()[partial_name][:4]), text).group().split(", ")[1].split(",")[0]
+                        else:
+                            pos = pos.group().split(", ")[1].split("The")[0]
+
+                        # speakers_df.loc[(speakers_df['surname'] == original_name) & (speakers_df['proceeding'] == proceeding + '_E'), 'position'] = pos
+                        return pos #speakers_df.loc[(speakers_df['surname'] == original_name) & (speakers_df['proceeding'] == proceeding + '_E'), 'position']
+
+                    except:
+                        # speakers_df.loc[(speakers_df['surname'] == original_name) & (speakers_df['proceeding'] == proceeding + '_E'), 'position'] = None
+                        return None #speakers_df.loc[(speakers_df['surname'] == original_name) & (speakers_df['proceeding'] == proceeding + '_E'), 'position']
+
+        else:
+            try:
+                pos = re.search(r"{}(\s?\w+-?\s?){{0,5}}(?=,)(.+?)(?=(The President|The Acting President|,))".format(name), text)
+                if pos == None:
+                    pos = re.search(r"{}(\s?\w+-?\s?){{0,5}},(\s?\w+){{0,9}}(\.?\s?),".format(name), text).group().split(", ")[1].split(",")[0]
+                else:
+                    pos = pos.group().split(", ")[1].split("The")[0]
+
+                # speakers_df.loc[(speakers_df['surname'] == original_name) & (speakers_df['proceeding'] == proceeding + '_E'), 'position'] = pos
+                return pos #speakers_df.loc[(speakers_df['surname'] == original_name) & (speakers_df['proceeding'] == proceeding + '_E'), 'position']
+
+            except:
+                for partial_name in range(len(full_name.split())):
+                    try:
+                        pos = re.search(r"{}(\s?\w+-?\s?){{0,5}}(?=,)(.+?)(?=(The President|The Acting President|,))".format(full_name.split()[partial_name][:4]), text)
+                        if pos == None:
+                            pos = re.search(r"{}(\s?\w+-?\s?){{0,5}},(\s?\w+){{0,9}}(\.?\s?),".format(full_name.split()[partial_name][:4]), text).group().split(", ")[1].split(",")[0]
+                        else:
+                            pos = pos.group().split(", ")[1].split("The")[0]
+                        # speakers_df.loc[(speakers_df['surname'] == original_name) & (speakers_df['proceeding'] == proceeding + '_E'), 'position'] = pos
+                        return pos # speakers_df.loc[(speakers_df['surname'] == original_name) & (speakers_df['proceeding'] == proceeding + '_E'), 'position']
+
+                    except:
+                        # speakers_df.loc[(speakers_df['surname'] == original_name) & (speakers_df['proceeding'] == proceeding + '_E'), 'position'] = None
+                        return None #speakers_df.loc[(speakers_df['surname'] == original_name) & (speakers_df['proceeding'] == proceeding + '_E'), 'position']
+
+    except:
+        # speakers_df.loc[(speakers_df['surname'] == original_name) & (speakers_df['proceeding'] == proceeding + '_E'), 'position'] = None
+        return None #speakers_df.loc[(speakers_df['surname'] == original_name) & (speakers_df['proceeding'] == proceeding + '_E'), 'position']
+
