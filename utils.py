@@ -72,7 +72,7 @@ def parse_pdf(pdf_name, names, proceeding, speakers_df, year, partial_df):
 def load_data():
     try:
         print("Loading Data...")
-        speakers_df = pd.read_csv(Path('Data/speakers_working.csv'))
+        speakers_df = pd.read_csv(Path('Data/speakers.csv'))
         speakers_df['position'] = None
         print("Finished Loading Data...")
 

@@ -26,9 +26,9 @@ warnings.simplefilter("ignore")
 
 
 # For debugging use
-YEAR        = "2010"
-LOWER_BOUND = 11
-UPPER_BOUND = 24
+YEAR        = "2017"
+LOWER_BOUND = 0
+UPPER_BOUND = 100
 
 if __name__ == "__main__":
     yearly_df   = pd.DataFrame()
@@ -54,6 +54,7 @@ if __name__ == "__main__":
         except Exception as e:
             print(e)
             print("Could not find: {}".format(file))
+    speakers_df.to_csv(Path('Data/speakers.csv'.format()), index=False)
     yearly_df.to_csv(Path("Data/speeches/" + YEAR + '/{}.csv'.format(YEAR), index=False))
     print("Done")
 
