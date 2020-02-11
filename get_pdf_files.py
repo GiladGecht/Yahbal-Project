@@ -24,7 +24,7 @@ for i in tqdm(range(47, 71)):
             driver.get(base_url.format(i, j))
             iframe = driver.find_element_by_class_name("embed-responsive-item")
             driver.switch_to.frame(iframe)
-            driver.find_element_by_id("open-button").click()
+            # driver.find_element_by_id("open-button").click()
             print("Downloaded: A/{}/PV.{}".format(i, j))
         except:
             print("Unable to find file {}...".format(base_url.format(i, j)))

@@ -73,7 +73,6 @@ def load_data():
     try:
         print("Loading Data...")
         speakers_df = pd.read_csv(Path('Data/speakers.csv'))
-        speakers_df['position'] = None
         print("Finished Loading Data...")
 
         return speakers_df
